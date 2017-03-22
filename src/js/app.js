@@ -5,7 +5,7 @@ var dt = require('datatables.net')();
 
 require('datatables.net-bs');
 
-require('./app.css');
+require('css/app.css');
 
 $('#doit').click(function (){
   $('#response').html('Button was pressed');
