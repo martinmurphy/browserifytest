@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Just a test for browserify",
   "main": "index.js",
-  "browserify": {"transform": ["browserify-css"]},
+  "browserify": {
+    "transform": [
+      "browserify-css"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_PATH=./src browserify src/js/app.js -o www/bundle.js",
@@ -13,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "browserify-css": "^0.10.0",
+    "browserify-css": "^0.11.0",
     "datatables.net": "^1.10.13",
     "datatables.net-bs": "^1.10.13",
     "jquery": "^3.1.1"
