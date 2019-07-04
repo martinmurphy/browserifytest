@@ -11,7 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_PATH=./src browserify src/js/app.js -o www/bundle.js",
-    "serve": "http-server www"
+    "serve": "http-server www",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Martin Murphy <mm@martinmurphy.com>",
   "license": "MIT",
@@ -20,10 +22,12 @@
     "browserify-css": "^0.11.0",
     "datatables.net": "^1.10.13",
     "datatables.net-bs": "^1.10.13",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "browserify": "^14.1.0",
     "http-server": "^0.9.0"
-  }
+  },
+  "snyk": true
 }
